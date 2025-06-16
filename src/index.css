@@ -1,0 +1,116 @@
+:root {
+  --bg-light: #f9f9f9;
+  --bg-dark: #121212;
+  --text-light: #1a1a1a;
+  --text-dark: #f9f9f9;
+  --primary-color: #4f46e5;
+  --secondary-color: #6b7280;
+  --nav-bg: #111827;
+  --nav-text: #ffffff;
+  --input-bg: #ffffff;
+  --input-border: #d1d5db;
+  --input-radius: 6px;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark {
+  --bg-light: var(--bg-dark);
+  --text-light: var(--text-dark);
+  --input-bg: #1f2937;
+  --input-border: #374151;
+}
+
+nav {
+  background-color: var(--nav-bg);
+  color: var(--nav-text);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav a {
+  color: var(--nav-text);
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+  border-radius: var(--input-radius);
+  padding: 10px 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #4338ca;
+}
+
+form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: var(--input-radius);
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dark form {
+  background: #1f2937;
+}
+
+input, select {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid var(--input-border);
+  background-color: var(--input-bg);
+  color: var(--text-light);
+  border-radius: var(--input-radius);
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+li {
+  background: #fff;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border-radius: var(--input-radius);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.dark li {
+  background: #1f2937;
+}

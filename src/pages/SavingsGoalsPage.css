@@ -1,0 +1,109 @@
+/* SavingsGoalsPage.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f78ca0, #f9748f, #fd868c, #fe9a8b);
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.goal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 16px;
+    min-height: 100vh;
+}
+
+.goal-form-card {
+    background-color: white;
+    padding: 30px 24px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.goal-form-card h2 {
+    margin-bottom: 20px;
+}
+
+.goal-form-card form input,
+.goal-form-card form button {
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px 14px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.goal-form-card form input:focus {
+    border-color: #7f5af0;
+}
+
+.goal-form-card form button {
+    background-color: #4f46e5;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.goal-form-card form button:hover {
+    background-color: #4338ca;
+}
+
+.goal-list {
+    width: 100%;
+    max-width: 700px;
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.goal-card {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+    background: #f9f9f9;
+}
+
+.goal-card h4 {
+    margin-top: 0;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 12px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    accent-color: #4f46e5;
+}
+
+.error-msg {
+    color: red;
+    margin-top: 10px;
+}
